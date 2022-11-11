@@ -73,7 +73,6 @@ function App(props) {
           <Route path="/landing-page" element={<LandingPage />}></Route>
           <Route path="/" element={<Content />}>
             <Route index element={<LinkCard />}></Route>
-            {/* <Route index element={<LinkCardClassBased/>}></Route> */}
             <Route
               path="/cat-cards"
               element={<CatCard ctgs={categories} />}
