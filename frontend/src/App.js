@@ -49,7 +49,7 @@ function App(props) {
   }, []);
 
   function linkFetch() {
-    if (userid) {
+    if (JSON.parse(localStorage.getItem("currentUser")).id) {
       dispatch(getLinks(userid)).then(() => {
         setLinkList(links);
         setIsLoaded(islinkloaded);

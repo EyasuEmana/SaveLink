@@ -209,5 +209,7 @@ function Navbar ({ logout,isAuthenticated }) {
       </AppBar>
     </ThemeProvider>
   );
+            
 };
+
 export default connect(null, { logout })(Navbar);
